@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>QUÁN CÀ HÊ - Tin tức & Ưu đãi</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Header Include -->
+    <div data-include="includes/header.html"></div>
+
+    <!-- Hero Section -->
+    <div class="position-relative">
+      <img
+        src="img/9.jpg"
+        class="d-block w-100 object-fit-cover news-hero"
+        alt="Tin tức"
+      />
+      <div
+        class="position-absolute top-50 start-50 translate-middle text-center text-white"
+      >
+        <h1 class="display-4 fw-bold">Tin tức & Ưu đãi</h1>
+        <p class="lead">Cập nhật những tin tức mới nhất từ Quán Cà Hê</p>
+      </div>
+    </div>
+
+    <!-- Featured News Section -->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="card mb-4">
+            <img src="img/10.png" class="card-img-top" alt="Tin tức nổi bật" />
+            <div class="card-body">
+              <div
+                class="d-flex justify-content-between align-items-center mb-2"
+              >
+                <span class="badge bg-danger">Ưu đãi đặc biệt</span>
+                <small class="text-muted">15/07/2025</small>
+              </div>
+              <h3 class="card-title">
+                🎉 Giảm giá 30% cho tất cả đồ uống trong tuần đầu tiên của tháng
+                8!
+              </h3>
+              <p class="card-text">
+                Chào mừng tháng 8 với chương trình ưu đãi đặc biệt! Từ ngày
+                1-7/8, tất cả đồ uống tại Quán Cà Hê sẽ được giảm giá 30%. Đây
+                là cơ hội tuyệt vời để bạn thưởng thức những ly cà phê, trà và
+                các loại đồ uống yêu thích với giá ưu đãi nhất.
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <a href="#" class="btn btn-primary">Xem chi tiết</a>
+                <div>
+                  <i class="fas fa-eye me-1"></i> 1,234 lượt xem
+                  <i class="fas fa-heart text-danger ms-3 me-1"></i> 89 lượt
+                  thích
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-header bg-primary text-white">
+              <h5 class="mb-0">
+                <i class="fas fa-fire me-2"></i>Tin tức nổi bật
+              </h5>
+            </div>
+            <div class="card-body">
+              <div class="news-item mb-3 pb-3 border-bottom">
+                <h6>
+                  <a href="#" class="text-decoration-none"
+                    >Khai trương chi nhánh mới tại Quận 7</a
+                  >
+                </h6>
+                <small class="text-muted">10/07/2025</small>
+                <p class="small">
+                  Quán Cà Hê vinh dự thông báo khai trương chi nhánh thứ 3 tại
+                  Quận 7...
+                </p>
+              </div>
+              <div class="news-item mb-3 pb-3 border-bottom">
+                <h6>
+                  <a href="#" class="text-decoration-none"
+                    >Menu mùa hè 2025 chính thức ra mắt</a
+                  >
+                </h6>
+                <small class="text-muted">05/07/2025</small>
+                <p class="small">
+                  Khám phá những hương vị mới toanh trong menu mùa hè đầy màu
+                  sắc...
+                </p>
+              </div>
+              <div class="news-item">
+                <h6>
+                  <a href="#" class="text-decoration-none"
+                    >Chương trình khách hàng thân thiết</a
+                  >
+                </h6>
+                <small class="text-muted">01/07/2025</small>
+                <p class="small">
+                  Tham gia chương trình tích điểm và nhận nhiều ưu đãi hấp
+                  dẫn...
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- News Categories -->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <h5>Danh mục tin tức</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a
+                    href="#"
+                    class="text-decoration-none"
+                    onclick="filterNews('all')"
+                    >🔥 Tất cả</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-decoration-none"
+                    onclick="filterNews('promotion')"
+                    >🎁 Ưu đãi</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-decoration-none"
+                    onclick="filterNews('event')"
+                    >🎉 Sự kiện</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-decoration-none"
+                    onclick="filterNews('new-product')"
+                    >☕ Sản phẩm mới</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-decoration-none"
+                    onclick="filterNews('store')"
+                    >🏪 Cửa hàng</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-9">
+          <div class="row" id="newsGrid">
+            <!-- News Item 1 -->
+            <div class="col-md-6 mb-4 news-item" data-category="promotion">
+              <div class="card h-100">
+                <img src="img/11.jpg" class="card-img-top" alt="Ưu đãi" />
+                <div class="card-body">
+                  <div
+                    class="d-flex justify-content-between align-items-center mb-2"
+                  >
+                    <span class="badge bg-success">Ưu đãi</span>
+                    <small class="text-muted">12/07/2025</small>
+                  </div>
+                  <h5 class="card-title">
+                    Mua 2 tặng 1 - Chỉ có vào thứ 2 hàng tuần
+                  </h5>
+                  <p class="card-text">
+                    Chương trình "Mua 2 tặng 1" được áp dụng cho tất cả các loại
+                    đồ uống vào thứ 2 hàng tuần. Hãy rủ bạn bè đến cùng nhau
+                    thưởng thức!
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <a href="#" class="btn btn-outline-primary btn-sm"
+                      >Đọc thêm</a
+                    >
+                    <small class="text-muted">567 lượt xem</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- News Item 2 -->
+            <div class="col-md-6 mb-4 news-item" data-category="new-product">
+              <div class="card h-100">
+                <img
+                  src="img/new_menu/tcmatcha.png"
+                  class="card-img-top"
+                  alt="Sản phẩm mới"
+                />
+                <div class="card-body">
+                  <div
+                    class="d-flex justify-content-between align-items-center mb-2"
+                  >
+                    <span class="badge bg-info">Sản phẩm mới</span>
+                    <small class="text-muted">08/07/2025</small>
+                  </div>
+                  <h5 class="card-title">
+                    Ra mắt Trân Châu Matcha - Hương vị Nhật Bản
+                  </h5>
+                  <p class="card-text">
+                    Trân châu matcha với hương vị đậm đà của trà xanh Nhật Bản
+                    kết hợp với trân châu dai giòn, mang đến trải nghiệm hoàn
+                    toàn mới.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <a href="#" class="btn btn-outline-primary btn-sm"
+                      >Đọc thêm</a
+                    >
+                    <small class="text-muted">892 lượt xem</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- News Item 3 -->
+            <div class="col-md-6 mb-4 news-item" data-category="event">
+              <div class="card h-100">
+                <img src="img/13.jpg" class="card-img-top" alt="Sự kiện" />
+                <div class="card-body">
+                  <div
+                    class="d-flex justify-content-between align-items-center mb-2"
+                  >
+                    <span class="badge bg-warning text-dark">Sự kiện</span>
+                    <small class="text-muted">06/07/2025</small>
+                  </div>
+                  <h5 class="card-title">Đêm nhạc acoustic tại Quán Cà Hê</h5>
+                  <p class="card-text">
+                    Tham gia đêm nhạc acoustic với những ca sĩ trẻ tài năng vào
+                    tối thứ 7 hàng tuần. Thưởng thức cà phê và âm nhạc trong
+                    không gian ấm cúng.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <a href="#" class="btn btn-outline-primary btn-sm"
+                      >Đọc thêm</a
+                    >
+                    <small class="text-muted">1,123 lượt xem</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- News Item 4 -->
+            <div class="col-md-6 mb-4 news-item" data-category="store">
+              <div class="card h-100">
+                <img src="img/14.jpg" class="card-img-top" alt="Cửa hàng" />
+                <div class="card-body">
+                  <div
+                    class="d-flex justify-content-between align-items-center mb-2"
+                  >
+                    <span class="badge bg-primary">Cửa hàng</span>
+                    <small class="text-muted">03/07/2025</small>
+                  </div>
+                  <h5 class="card-title">
+                    Nâng cấp không gian tại chi nhánh Bình Thạnh
+                  </h5>
+                  <p class="card-text">
+                    Chi nhánh Bình Thạnh đã hoàn tất việc nâng cấp với không
+                    gian rộng rãi hơn, trang trí hiện đại và khu vực làm việc
+                    riêng biệt.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <a href="#" class="btn btn-outline-primary btn-sm"
+                      >Đọc thêm</a
+                    >
+                    <small class="text-muted">445 lượt xem</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- News Item 5 -->
+            <div class="col-md-6 mb-4 news-item" data-category="promotion">
+              <div class="card h-100">
+                <img
+                  src="img/15.jpg"
+                  class="card-img-top"
+                  alt="Ưu đãi sinh viên"
+                />
+                <div class="card-body">
+                  <div
+                    class="d-flex justify-content-between align-items-center mb-2"
+                  >
+                    <span class="badge bg-success">Ưu đãi</span>
+                    <small class="text-muted">01/07/2025</small>
+                  </div>
+                  <h5 class="card-title">Giảm 20% cho sinh viên cả tuần</h5>
+                  <p class="card-text">
+                    Sinh viên xuất trình thẻ sinh viên sẽ được giảm 20% cho tất
+                    cả đồ uống từ thứ 2 đến chủ nhật. Áp dụng cho tất cả chi
+                    nhánh.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <a href="#" class="btn btn-outline-primary btn-sm"
+                      >Đọc thêm</a
+                    >
+                    <small class="text-muted">2,156 lượt xem</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- News Item 6 -->
+            <div class="col-md-6 mb-4 news-item" data-category="event">
+              <div class="card h-100">
+                <img src="img/16.jpg" class="card-img-top" alt="Workshop" />
+                <div class="card-body">
+                  <div
+                    class="d-flex justify-content-between align-items-center mb-2"
+                  >
+                    <span class="badge bg-warning text-dark">Sự kiện</span>
+                    <small class="text-muted">28/06/2025</small>
+                  </div>
+                  <h5 class="card-title">Workshop pha cà phê cơ bản</h5>
+                  <p class="card-text">
+                    Tham gia workshop học cách pha cà phê cơ bản với barista
+                    chuyên nghiệp. Đăng ký ngay để nhận ưu đãi sớm!
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <a href="#" class="btn btn-outline-primary btn-sm"
+                      >Đọc thêm</a
+                    >
+                    <small class="text-muted">789 lượt xem</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pagination -->
+          <nav aria-label="News pagination">
+            <ul class="pagination justify-content-center">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1">Trước</a>
+              </li>
+              <li class="page-item active">
+                <a class="page-link" href="#">1</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">2</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">3</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">Sau</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- Newsletter Subscription -->
+    <div class="container-fluid mt-5 px-0">
+      <div class="bg-dark text-white py-5">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+              <h4><i class="fas fa-envelope me-2"></i>Đăng ký nhận tin tức</h4>
+              <p class="lead mb-4">
+                Nhận thông tin về những ưu đãi và sự kiện mới nhất từ Quán Cà Hê
+              </p>
+              <form class="row g-3 justify-content-center">
+                <div class="col-md-6">
+                  <input
+                    type="email"
+                    class="form-control form-control-lg"
+                    placeholder="Nhập email của bạn"
+                    required
+                  />
+                </div>
+                <div class="col-md-3">
+                  <button type="submit" class="btn btn-light btn-lg w-100">
+                    Đăng ký
+                  </button>
+                </div>
+              </form>
+              <small class="mt-3 d-block opacity-75"
+                >* Chúng tôi cam kết không spam và bảo vệ thông tin cá nhân của
+                bạn</small
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Include -->
+    <div data-include="includes/footer.html"></div>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Include Script -->
+    <script src="js/include.js"></script>
+    <script>
+      // Add custom styles
+      document.addEventListener("DOMContentLoaded", function () {
+        const style = document.createElement("style");
+        style.textContent = `
+        .news-hero {
+          height: 400px;
+        }
+        .news-item {
+          transition: transform 0.3s ease;
+        }
+        .news-item:hover {
+          transform: translateY(-5px);
+        }
+        .card-img-top {
+          height: 200px;
+          object-fit: cover;
+        }
+        .social-links a {
+          margin: 0 10px;
+        }
+      `;
+        document.head.appendChild(style);
+      });
+
+      // Filter news by category
+      function filterNews(category) {
+        const newsItems = document.querySelectorAll(".news-item");
+
+        newsItems.forEach((item) => {
+          if (
+            category === "all" ||
+            item.getAttribute("data-category") === category
+          ) {
+            item.style.display = "block";
+          } else {
+            item.style.display = "none";
+          }
+        });
+      }
+
+      // Newsletter subscription
+      document.querySelector("form").addEventListener("submit", function (e) {
+        e.preventDefault();
+        const email = this.querySelector('input[type="email"]').value;
+
+        if (email) {
+          alert(
+            "Cảm ơn bạn đã đăng ký! Chúng tôi sẽ gửi tin tức mới nhất đến email: " +
+              email
+          );
+          this.reset();
+        }
+      });
+
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

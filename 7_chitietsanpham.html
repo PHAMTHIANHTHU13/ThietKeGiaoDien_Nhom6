@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>QUÁN CÀ HÊ - Chi tiết sản phẩm</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Include -->
+    <div data-include="includes/header.html"></div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="1_home.html">Trang chủ</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  id="navbarDropdown"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Menu</a
+                >
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="2_menu.html">Tất Cả</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="2_menu.html">Cà Phê</a>
+                  </li>
+                  <li><a class="dropdown-item" href="2_menu.html">Trà</a></li>
+                  <li><a class="dropdown-item" href="2_menu.html">Olong</a></li>
+                  <li>
+                    <a class="dropdown-item" href="2_menu.html">Matcha</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="2_menu.html"
+                      >Trân Châu Tươi</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="3_cuahang.html">Cửa hàng</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="4_tuyendung.html">Tuyển dụng</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="5_lienhe.html">Liên hệ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="9_tintuc.html">Tin tức</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="6_dangnhap.html">Đăng nhập</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="container mt-3">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="1_home.html">Trang chủ</a></li>
+          <li class="breadcrumb-item"><a href="2_menu.html">Menu</a></li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Chi tiết sản phẩm
+          </li>
+        </ol>
+      </nav>
+    </div>
+
+    <!-- Product Detail Section -->
+    <div class="container mt-4">
+      <div class="row">
+        <!-- Product Images -->
+        <div class="col-md-6">
+          <div class="card">
+            <img
+              src="img/new_menu/cafe-americano-da.jpg"
+              class="card-img-top"
+              alt="Cafe Americano Đá"
+              id="mainImage"
+            />
+            <div class="card-body">
+              <div class="row">
+                <div class="col-3">
+                  <img
+                    src="img/new_menu/cafe-americano-da.jpg"
+                    class="img-fluid thumbnail-img"
+                    alt="Cafe Americano 1"
+                    onclick="changeImage(this)"
+                  />
+                </div>
+                <div class="col-3">
+                  <img
+                    src="img/new_menu/cafe-trung.png"
+                    class="img-fluid thumbnail-img"
+                    alt="Cafe Americano 2"
+                    onclick="changeImage(this)"
+                  />
+                </div>
+                <div class="col-3">
+                  <img
+                    src="img/new_menu/ca-phe-muoi.png"
+                    class="img-fluid thumbnail-img"
+                    alt="Cafe Americano 3"
+                    onclick="changeImage(this)"
+                  />
+                </div>
+                <div class="col-3">
+                  <img
+                    src="img/18.jpg"
+                    class="img-fluid thumbnail-img"
+                    alt="Cafe Americano 4"
+                    onclick="changeImage(this)"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Information -->
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h1 class="card-title">Cafe Americano Đá</h1>
+              <div class="mb-3">
+                <span class="badge bg-success me-2">Bestseller</span>
+                <span class="badge bg-info">Cà phê</span>
+              </div>
+
+              <div class="mb-3">
+                <div class="d-flex align-items-center">
+                  <div class="stars me-2">
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                  </div>
+                  <span class="text-muted">(4.8/5 - 120 đánh giá)</span>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <h3 class="text-primary fw-bold">45,000 VNĐ</h3>
+                <small class="text-muted text-decoration-line-through"
+                  >55,000 VNĐ</small
+                >
+                <span class="badge bg-danger ms-2">Giảm 18%</span>
+              </div>
+
+              <div class="mb-3">
+                <h5>Mô tả sản phẩm:</h5>
+                <p class="text-muted">
+                  Cafe Americano đá là sự kết hợp hoàn hảo giữa espresso đậm đà
+                  và nước đá mát lạnh, tạo nên một ly cà phê nhẹ nhàng, thơm
+                  ngon với hương vị cân bằng. Đây là lựa chọn tuyệt vời cho
+                  những ai yêu thích cà phê nhẹ và muốn tỉnh táo trong ngày hè.
+                </p>
+              </div>
+
+              <div class="mb-3">
+                <h6>Thành phần:</h6>
+                <ul class="list-unstyled">
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Espresso
+                    nguyên chất
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Nước lọc
+                  </li>
+                  <li><i class="fas fa-check text-success me-2"></i>Đá viên</li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Không đường
+                    (có thể thêm theo yêu cầu)
+                  </li>
+                </ul>
+              </div>
+
+              <div class="mb-3">
+                <label for="sizeSelect" class="form-label">Kích thước:</label>
+                <select class="form-select" id="sizeSelect">
+                  <option value="small">Nhỏ (S) - 45,000 VNĐ</option>
+                  <option value="medium" selected>Vừa (M) - 50,000 VNĐ</option>
+                  <option value="large">Lớn (L) - 55,000 VNĐ</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label for="iceLevel" class="form-label">Mức độ đá:</label>
+                <select class="form-select" id="iceLevel">
+                  <option value="no-ice">Không đá</option>
+                  <option value="less-ice">Ít đá</option>
+                  <option value="normal-ice" selected>Bình thường</option>
+                  <option value="extra-ice">Nhiều đá</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label for="quantity" class="form-label">Số lượng:</label>
+                <div class="input-group" style="max-width: 150px">
+                  <button
+                    class="btn btn-outline-secondary"
+                    type="button"
+                    onclick="changeQuantity(-1)"
+                  >
+                    -
+                  </button>
+                  <input
+                    type="number"
+                    class="form-control text-center"
+                    id="quantity"
+                    value="1"
+                    min="1"
+                  />
+                  <button
+                    class="btn btn-outline-secondary"
+                    type="button"
+                    onclick="changeQuantity(1)"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+
+              <div class="d-grid gap-2">
+                <button
+                  type="button"
+                  class="btn btn-primary btn-lg"
+                  onclick="addToCart()"
+                >
+                  <i class="fas fa-cart-plus me-2"></i>Thêm vào giỏ hàng
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-primary"
+                  onclick="addToFavorite()"
+                >
+                  <i class="far fa-heart me-2"></i>Yêu thích
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product Details Tabs -->
+    <div class="container mt-5">
+      <ul class="nav nav-tabs" id="productTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="description-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#description"
+            type="button"
+            role="tab"
+          >
+            Mô tả chi tiết
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="reviews-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#reviews"
+            type="button"
+            role="tab"
+          >
+            Đánh giá (120)
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="nutrition-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nutrition"
+            type="button"
+            role="tab"
+          >
+            Thông tin dinh dưỡng
+          </button>
+        </li>
+      </ul>
+
+      <div class="tab-content mt-3" id="productTabsContent">
+        <div class="tab-pane fade show active" id="description" role="tabpanel">
+          <div class="card">
+            <div class="card-body">
+              <h5>Cafe Americano Đá - Hương vị cà phê nguyên bản</h5>
+              <p>
+                Cafe Americano đá là một trong những loại cà phê cổ điển được
+                yêu thích nhất tại Quán Cà Hê. Được pha chế từ espresso nguyên
+                chất kết hợp với nước lọc và đá viên, tạo nên một ly cà phê có
+                hương vị nhẹ nhàng nhưng vẫn giữ được độ đậm đà đặc trưng của cà
+                phê.
+              </p>
+              <p>Quy trình pha chế của chúng tôi:</p>
+              <ol>
+                <li>Espresso được chiết xuất từ hạt cà phê Arabica cao cấp</li>
+                <li>Pha loãng với nước lọc theo tỷ lệ vàng</li>
+                <li>Thêm đá viên để tạo độ mát</li>
+                <li>Phục vụ ngay lập tức để giữ hương vị tốt nhất</li>
+              </ol>
+              <p>
+                Americano đá phù hợp với những ai yêu thích cà phê nhẹ, không
+                quá đậm đà và muốn tỉnh táo trong ngày hè nóng bức.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="reviews" role="tabpanel">
+          <div class="card">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-4">
+                  <h5>Đánh giá tổng quan</h5>
+                  <div class="text-center">
+                    <h2 class="text-warning">4.8</h2>
+                    <div class="stars">
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                    </div>
+                    <p class="text-muted">120 đánh giá</p>
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="review-item border-bottom pb-3 mb-3">
+                    <div class="d-flex justify-content-between">
+                      <strong>Nguyễn Văn A</strong>
+                      <div class="stars">
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                      </div>
+                    </div>
+                    <p class="text-muted small">2 ngày trước</p>
+                    <p>
+                      Cà phê rất ngon, hương vị cân bằng. Giá cả hợp lý. Sẽ quay
+                      lại!
+                    </p>
+                  </div>
+
+                  <div class="review-item border-bottom pb-3 mb-3">
+                    <div class="d-flex justify-content-between">
+                      <strong>Trần Thị B</strong>
+                      <div class="stars">
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="far fa-star text-warning"></i>
+                      </div>
+                    </div>
+                    <p class="text-muted small">1 tuần trước</p>
+                    <p>
+                      Americano đá ở đây rất tuyệt, không quá đậm và rất mát.
+                      Phù hợp cho mùa hè.
+                    </p>
+                  </div>
+
+                  <button
+                    class="btn btn-primary"
+                    onclick="window.location.href='8_danhgia.html'"
+                  >
+                    Xem tất cả đánh giá
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="nutrition" role="tabpanel">
+          <div class="card">
+            <div class="card-body">
+              <h5>Thông tin dinh dưỡng (size M)</h5>
+              <table class="table table-striped">
+                <tbody>
+                  <tr>
+                    <td>Calories</td>
+                    <td>15 kcal</td>
+                  </tr>
+                  <tr>
+                    <td>Carbohydrates</td>
+                    <td>3g</td>
+                  </tr>
+                  <tr>
+                    <td>Protein</td>
+                    <td>1g</td>
+                  </tr>
+                  <tr>
+                    <td>Fat</td>
+                    <td>0g</td>
+                  </tr>
+                  <tr>
+                    <td>Caffeine</td>
+                    <td>95mg</td>
+                  </tr>
+                  <tr>
+                    <td>Sodium</td>
+                    <td>5mg</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="text-muted">
+                <small
+                  >* Các giá trị dinh dưỡng có thể thay đổi tùy thuộc vào cách
+                  pha chế và kích thước.</small
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Related Products -->
+    <div class="container mt-5 mb-5">
+      <h3 class="text-center mb-4">Sản phẩm liên quan</h3>
+      <div class="row">
+        <div class="col-md-3 mb-3">
+          <div class="card">
+            <img
+              src="img/new_menu/cafe-trung.png"
+              class="card-img-top"
+              alt="Cafe Trứng"
+            />
+            <div class="card-body">
+              <h6 class="card-title">Cafe Trứng</h6>
+              <p class="card-text text-primary fw-bold">52,000 VNĐ</p>
+              <button
+                class="btn btn-primary btn-sm w-100"
+                onclick="window.location.href='7_chitietsanpham.html'"
+              >
+                Xem chi tiết
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="card">
+            <img
+              src="img/new_menu/ca-phe-muoi.png"
+              class="card-img-top"
+              alt="Cà Phê Muối"
+            />
+            <div class="card-body">
+              <h6 class="card-title">Cà Phê Muối</h6>
+              <p class="card-text text-primary fw-bold">48,000 VNĐ</p>
+              <button
+                class="btn btn-primary btn-sm w-100"
+                onclick="window.location.href='7_chitietsanpham.html'"
+              >
+                Xem chi tiết
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="card">
+            <img
+              src="img/new_menu/IcedMatchaLatte.jpg"
+              class="card-img-top"
+              alt="Matcha Latte"
+            />
+            <div class="card-body">
+              <h6 class="card-title">Matcha Latte</h6>
+              <p class="card-text text-primary fw-bold">55,000 VNĐ</p>
+              <button
+                class="btn btn-primary btn-sm w-100"
+                onclick="window.location.href='7_chitietsanpham.html'"
+              >
+                Xem chi tiết
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="card">
+            <img
+              src="img/new_menu/tra_buoi_dau.jpg"
+              class="card-img-top"
+              alt="Trà Bưởi Đậu"
+            />
+            <div class="card-body">
+              <h6 class="card-title">Trà Bưởi Đậu</h6>
+              <p class="card-text text-primary fw-bold">42,000 VNĐ</p>
+              <button
+                class="btn btn-primary btn-sm w-100"
+                onclick="window.location.href='7_chitietsanpham.html'"
+              >
+                Xem chi tiết
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Include -->
+    <div data-include="includes/footer.html"></div>
+    
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+    
+    <!-- Include Script -->
+    <script src="js/include.js"></script>
+    <script>
+      // Change main image when thumbnail is clicked
+      function changeImage(element) {
+        document.getElementById("mainImage").src = element.src;
+      }
+
+      // Change quantity
+      function changeQuantity(change) {
+        const quantityInput = document.getElementById("quantity");
+        let currentValue = parseInt(quantityInput.value);
+        let newValue = currentValue + change;
+
+        if (newValue >= 1) {
+          quantityInput.value = newValue;
+        }
+      }
+
+      // Add to cart
+      function addToCart() {
+        const quantity = document.getElementById("quantity").value;
+        const size = document.getElementById("sizeSelect").value;
+        const iceLevel = document.getElementById("iceLevel").value;
+
+        alert(
+          `Đã thêm ${quantity} ly Cafe Americano Đá (${size}) vào giỏ hàng!`
+        );
+      }
+
+      // Add to favorite
+      function addToFavorite() {
+        alert("Đã thêm vào danh sách yêu thích!");
+      }
+
+      // Add CSS for thumbnail hover effect
+      document.addEventListener("DOMContentLoaded", function () {
+        const style = document.createElement("style");
+        style.textContent = `
+        .thumbnail-img {
+          cursor: pointer;
+          transition: transform 0.2s;
+          border: 2px solid transparent;
+        }
+        .thumbnail-img:hover {
+          transform: scale(1.05);
+          border-color: #007bff;
+        }
+      `;
+        document.head.appendChild(style);
+      });
+    </script>
+  </body>
+</html>
