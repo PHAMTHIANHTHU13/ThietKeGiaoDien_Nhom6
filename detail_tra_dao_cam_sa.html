@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>TRÀ ĐÀO CAM SẢ - QUÁN CÀ PHÊ</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header Include -->
+    <div data-include="includes/header.html"></div>
+
+    <!-- Product section-->
+    <section class="py-5">
+      <div class="container px-4 px-lg-5 my-5">
+        <div class="row gx-4 gx-lg-5 align-items-center">
+          <div class="col-md-6">
+            <div class="position-relative mb-4">
+              <img
+                class="img-fluid rounded shadow-lg w-100"
+                src="img/new_menu/tra-dao-cam-sa.png"
+                alt="Trà Đào Cam Sả"
+                style="height: 500px; object-fit: cover; cursor: pointer"
+                onclick="openImageModal(this)"
+              />
+              <div class="position-absolute top-0 end-0 m-3">
+                <span class="badge bg-primary px-3 py-2">
+                  <i class="fas fa-expand me-1"></i>Xem full
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="small mb-1">Danh mục: Trà</div>
+            <h1 class="display-5 fw-bolder">Trà Đào Cam Sả</h1>
+            <div class="fs-5 mb-5">
+              <span class="text-decoration-line-through">52.000đ</span>
+              <span>47.000đ</span>
+            </div>
+            <p class="lead">
+              Trà đào cam sả là sự kết hợp hoàn hảo giữa vị ngọt của đào chín,
+              vị chua tươi mát của cam và hương thơm đặc trưng của sả. Được pha
+              trên nền trà ô long thơm ngon, tạo nên một thức uống tuyệt vời
+              giúp giải nhiệt và thư giãn.
+            </p>
+            <div class="d-flex">
+              <input
+                class="form-control text-center me-3"
+                id="inputQuantity"
+                type="num"
+                value="1"
+                style="max-width: 3rem"
+              />
+              <button
+                class="btn btn-outline-dark flex-shrink-0"
+                type="button"
+                id="buttonAddToCart"
+              >
+                <i class="bi-cart-fill me-1"></i>
+                Thêm vào giỏ hàng
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product details section -->
+    <section class="py-5 bg-light">
+      <div class="container px-4 px-lg-5">
+        <div class="row">
+          <div class="col-lg-8">
+            <h3 class="fw-bolder mb-4">Thông tin chi tiết</h3>
+            <div class="row mb-4">
+              <div class="col-md-6">
+                <h5>Thành phần chính:</h5>
+                <ul class="list-unstyled">
+                  <li>• Trà Ô Long cao cấp</li>
+                  <li>• Đào tươi</li>
+                  <li>• Cam tươi</li>
+                  <li>• Sả tươi</li>
+                  <li>• Mật ong thiên nhiên</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <h5>Đặc điểm:</h5>
+                <ul class="list-unstyled">
+                  <li>• Hương vị chua ngọt hài hòa</li>
+                  <li>• Thơm mát, giải nhiệt</li>
+                  <li>• Giàu vitamin và khoáng chất</li>
+                  <li>• Không chất tạo màu</li>
+                  <li>• Phù hợp mọi thời điểm</li>
+                </ul>
+              </div>
+            </div>
+            <div class="mb-4">
+              <h5>Cách thưởng thức:</h5>
+              <p>
+                Trà đào cam sả được phục vụ trong ly cao với nhiều đá lạnh,
+                trang trí bằng những lát đào, cam tươi và cọng sả thơm. Khuấy
+                đều trước khi uống để hòa quyện các hương vị. Nên thưởng thức
+                ngay để cảm nhận trọn vẹn hương vị tươi mát.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Đánh giá khách hàng</h5>
+                <div
+                  class="d-flex justify-content-center small text-warning mb-2"
+                >
+                  <div class="bi-star-fill"></div>
+                  <div class="bi-star-fill"></div>
+                  <div class="bi-star-fill"></div>
+                </div>
+                <p class="card-text">
+                  <small class="text-muted">3.8/5 (76 đánh giá)</small>
+                </p>
+                <div class="mb-3">
+                  <div class="progress mb-1">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 45%"
+                    ></div>
+                  </div>
+                  <small>5 sao: 45%</small>
+                </div>
+                <div class="mb-3">
+                  <div class="progress mb-1">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 30%"
+                    ></div>
+                  </div>
+                  <small>4 sao: 30%</small>
+                </div>
+                <div class="mb-3">
+                  <div class="progress mb-1">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 25%"
+                    ></div>
+                  </div>
+                  <small>3 sao: 25%</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Related products section-->
+    <section class="py-5">
+      <div class="container px-4 px-lg-5 mt-5">
+        <h2 class="fw-bolder mb-4">Sản phẩm liên quan</h2>
+        <div
+          class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"
+        >
+          <div class="col mb-5">
+            <div class="card h-100">
+              <img
+                class="card-img-top"
+                src="img/new_menu/tra_buoi_dau.jpg"
+                alt="Trà Bưởi Dâu"
+              />
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <h5 class="fw-bolder">Trà Bưởi Dâu</h5>
+                  50.000đ
+                </div>
+              </div>
+              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                <div class="text-center">
+                  <a
+                    class="btn btn-outline-dark mt-auto"
+                    href="detail_tra_buoi_dau.html"
+                    >Chi tiết</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-5">
+            <div class="card h-100">
+              <img
+                class="card-img-top"
+                src="img/new_menu/Tra-hat-sen.jpg"
+                alt="Trà Hạt Sen"
+              />
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <h5 class="fw-bolder">Trà Hạt Sen</h5>
+                  55.000đ
+                </div>
+              </div>
+              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                <div class="text-center">
+                  <a
+                    class="btn btn-outline-dark mt-auto"
+                    href="detail_tra_hat_sen.html"
+                    >Chi tiết</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Include -->
+    <div data-include="includes/footer.html"></div>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- Include Script -->
+    <script src="js/include.js"></script>
+  </body>
+</html>
