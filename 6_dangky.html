@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>QUÁN CÀ PHÊ - Đăng ký</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Header Include -->
+    <div data-include="includes/header.html"></div>
+
+    <!-- Header Image -->
+    <div class="position-relative">
+      <img
+        src="img/4.jpg"
+        class="d-block w-100 object-fit-cover"
+        style="height: 400px"
+        alt="Coffee"
+      />
+      <div
+        class="position-absolute top-50 start-50 translate-middle text-center text-white"
+      >
+        <h1 class="display-4 fw-bold">Tham gia cùng chúng tôi!</h1>
+        <p class="lead">
+          Đăng ký để trở thành thành viên và nhận ưu đãi đặc biệt
+        </p>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-5">
+          <div class="card shadow-lg">
+            <div class="card-header bg-success text-white text-center py-4">
+              <h3><i class="fas fa-user-plus me-2"></i>Đăng ký tài khoản</h3>
+            </div>
+            <div class="card-body p-5">
+              <form id="registerForm">
+                <div class="mb-4">
+                  <label for="registerName" class="form-label fw-semibold">
+                    <i class="fas fa-user me-2 text-success"></i>Họ và tên:
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control form-control-lg rounded-3"
+                    id="registerName"
+                    placeholder="Nhập họ và tên đầy đủ"
+                    required
+                  />
+                </div>
+                <div class="mb-4">
+                  <label for="registerEmail" class="form-label fw-semibold">
+                    <i class="fas fa-envelope me-2 text-success"></i>Email:
+                  </label>
+                  <input
+                    type="email"
+                    class="form-control form-control-lg rounded-3"
+                    id="registerEmail"
+                    placeholder="Nhập email của bạn"
+                    required
+                  />
+                </div>
+                <div class="mb-4">
+                  <label for="registerPhone" class="form-label fw-semibold">
+                    <i class="fas fa-phone me-2 text-success"></i>Số điện thoại:
+                  </label>
+                  <input
+                    type="tel"
+                    class="form-control form-control-lg rounded-3"
+                    id="registerPhone"
+                    placeholder="Nhập số điện thoại"
+                    required
+                  />
+                </div>
+                <div class="mb-4">
+                  <label for="registerPassword" class="form-label fw-semibold">
+                    <i class="fas fa-lock me-2 text-success"></i>Mật khẩu:
+                  </label>
+                  <div class="input-group">
+                    <input
+                      type="password"
+                      class="form-control form-control-lg rounded-3"
+                      id="registerPassword"
+                      placeholder="Nhập mật khẩu"
+                      required
+                    />
+                    <button
+                      class="btn btn-outline-secondary rounded-3"
+                      type="button"
+                      id="togglePassword"
+                      title="Hiển thị/Ẩn mật khẩu"
+                    >
+                      <i class="fas fa-eye"></i>
+                    </button>
+                  </div>
+                  <small class="form-text text-muted">
+                    <i class="fas fa-info-circle me-1"></i>
+                    Mật khẩu phải có ít nhất 8 ký tự
+                  </small>
+                </div>
+                <div class="mb-4">
+                  <label for="confirmPassword" class="form-label fw-semibold">
+                    <i class="fas fa-shield-alt me-2 text-success"></i>Xác nhận
+                    mật khẩu:
+                  </label>
+                  <div class="input-group">
+                    <input
+                      type="password"
+                      class="form-control form-control-lg rounded-3"
+                      id="confirmPassword"
+                      placeholder="Nhập lại mật khẩu"
+                      required
+                    />
+                    <button
+                      class="btn btn-outline-secondary rounded-3"
+                      type="button"
+                      id="toggleConfirmPassword"
+                      title="Hiển thị/Ẩn mật khẩu"
+                    >
+                      <i class="fas fa-eye"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="mb-4 form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="agreeTerms"
+                    required
+                  />
+                  <label class="form-check-label" for="agreeTerms">
+                    Tôi đồng ý với
+                    <a href="#" class="text-success text-decoration-none"
+                      >điều khoản sử dụng</a
+                    >
+                    và
+                    <a href="#" class="text-success text-decoration-none"
+                      >chính sách bảo mật</a
+                    >
+                  </label>
+                </div>
+                <button
+                  type="submit"
+                  class="btn btn-success btn-lg w-100 mb-3 rounded-3"
+                >
+                  <i class="fas fa-user-plus me-2"></i>Đăng ký tài khoản
+                </button>
+              </form>
+            </div>
+            <div class="card-footer text-center py-3 bg-light">
+              <p class="mb-0">
+                Đã có tài khoản?
+                <a
+                  href="6_dangnhap.html"
+                  class="text-success fw-bold text-decoration-none"
+                >
+                  Đăng nhập ngay <i class="fas fa-arrow-right ms-1"></i>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Benefits Section -->
+    <div class="container mt-5 mb-5">
+      <h2 class="text-center mb-4 text-success">Quyền lợi thành viên</h2>
+      <div class="row text-center">
+        <div class="col-md-3">
+          <div class="card border-0 h-100">
+            <div class="card-body">
+              <div class="mb-3">
+                <i class="fas fa-percent fa-3x text-success"></i>
+              </div>
+              <h5 class="text-success">Giảm giá đặc biệt</h5>
+              <p class="text-muted">Giảm 10% cho đơn hàng đầu tiên</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card border-0 h-100">
+            <div class="card-body">
+              <div class="mb-3">
+                <i class="fas fa-star fa-3x text-warning"></i>
+              </div>
+              <h5 class="text-success">Tích điểm thưởng</h5>
+              <p class="text-muted">Tích lũy điểm với mỗi lần mua hàng</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card border-0 h-100">
+            <div class="card-body">
+              <div class="mb-3">
+                <i class="fas fa-bell fa-3x text-primary"></i>
+              </div>
+              <h5 class="text-success">Thông báo ưu đãi</h5>
+              <p class="text-muted">
+                Nhận thông báo về chương trình khuyến mãi
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card border-0 h-100">
+            <div class="card-body">
+              <div class="mb-3">
+                <i class="fas fa-birthday-cake fa-3x text-danger"></i>
+              </div>
+              <h5 class="text-success">Quà sinh nhật</h5>
+              <p class="text-muted">Món quà đặc biệt trong ngày sinh nhật</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Include -->
+    <div data-include="includes/footer.html"></div>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Include Script -->
+    <script src="js/include.js"></script>
+    <script>
+      // Toggle password visibility
+      document
+        .getElementById("togglePassword")
+        .addEventListener("click", function () {
+          const passwordInput = document.getElementById("registerPassword");
+          const toggleIcon = this.querySelector("i");
+
+          if (passwordInput.type === "password") {
+            passwordInput.type = "text";
+            toggleIcon.classList.remove("fa-eye");
+            toggleIcon.classList.add("fa-eye-slash");
+          } else {
+            passwordInput.type = "password";
+            toggleIcon.classList.remove("fa-eye-slash");
+            toggleIcon.classList.add("fa-eye");
+          }
+        });
+
+      // Toggle confirm password visibility
+      document
+        .getElementById("toggleConfirmPassword")
+        .addEventListener("click", function () {
+          const passwordInput = document.getElementById("confirmPassword");
+          const toggleIcon = this.querySelector("i");
+
+          if (passwordInput.type === "password") {
+            passwordInput.type = "text";
+            toggleIcon.classList.remove("fa-eye");
+            toggleIcon.classList.add("fa-eye-slash");
+          } else {
+            passwordInput.type = "password";
+            toggleIcon.classList.remove("fa-eye-slash");
+            toggleIcon.classList.add("fa-eye");
+          }
+        });
+
+      // Register form validation
+      document
+        .getElementById("registerForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const name = document.getElementById("registerName").value;
+          const email = document.getElementById("registerEmail").value;
+          const phone = document.getElementById("registerPhone").value;
+          const password = document.getElementById("registerPassword").value;
+          const confirmPassword =
+            document.getElementById("confirmPassword").value;
+          const agreeTerms = document.getElementById("agreeTerms").checked;
+
+          // Check if all fields are filled
+          if (!name || !email || !phone || !password || !confirmPassword) {
+            alert("Vui lòng nhập đầy đủ thông tin!");
+            return;
+          }
+
+          // Check if terms are agreed
+          if (!agreeTerms) {
+            alert("Vui lòng đồng ý với điều khoản sử dụng!");
+            return;
+          }
+
+          // Simple email validation
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (!emailRegex.test(email)) {
+            alert("Email không đúng định dạng!");
+            return;
+          }
+
+          // Phone number validation (Vietnamese format)
+          const phoneRegex = /^(0[3|5|7|8|9])+([0-9]{8})$/;
+          if (!phoneRegex.test(phone)) {
+            alert("Số điện thoại không đúng định dạng!");
+            return;
+          }
+
+          // Password validation
+          if (password.length < 8) {
+            alert("Mật khẩu phải có ít nhất 8 ký tự!");
+            return;
+          }
+
+          // Confirm password validation
+          if (password !== confirmPassword) {
+            alert("Mật khẩu xác nhận không khớp!");
+            return;
+          }
+
+          // Simulate registration success
+          alert(
+            "Đăng ký thành công! Vui lòng kiểm tra email để kích hoạt tài khoản."
+          );
+
+          // Here you would normally redirect to login page or send verification email
+          // window.location.href = '6_dangnhap.html';
+        });
+    </script>
+  </body>
+</html>
